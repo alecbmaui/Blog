@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+    <h1>Weather</h1>
+    <form class="" action="/weather" method="post">
+      <form action="/" method="post">
+        <label for="cityName">Enter City: </label>
+        <input id = "cityName" type="text" name="cityName">
+        <button type="submit">Go!</button>
+    </form>
+
+  <p>City: <%=weatherInfo[1] %></p>
+  <p>Temperature: <%=weatherInfo[2] %>
+  degrees</p>
+  <p>Description: <%=weatherInfo[3] %>
+  </p>
+  <img src=<%=weatherInfo[4] %> > 
+  <p>Humidity: <%=weatherInfo[5] %>
+  %</p>
+  <p>Wind Direction: <%=weatherInfo[6] %>
+  degrees</p>
+<%- include("partials/footer"); -%>
